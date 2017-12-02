@@ -7,6 +7,7 @@ const
 const foundation = new Schema({
     name: requiredString(),
     email: requiredString(),
+    img: requiredString(),
     description: requiredString(),
     account_details: [{
         bank: requiredString(),
