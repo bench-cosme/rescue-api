@@ -4,10 +4,10 @@ const
 
     requiredString = (required = true) => ({ type: String, required });
 
-const incidents = new Schema({
+const incident = new Schema({
     name: requiredString(),
     safetytips: requiredString(),
     hotline: requiredString()
 });
 
-module.exports = mongoose.model('Incidents', incidents);
+module.exports = mongoose.model('Incident', incident);
