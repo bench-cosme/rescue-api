@@ -11,6 +11,7 @@ module.exports = (req, res, next) => {
     async function main() {
         try {
             console.log(req.params);
+            console.log(req.query);
             res.send(200);
         } catch (e) {
             res.send(SERVER_ERROR);
