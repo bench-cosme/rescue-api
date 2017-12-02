@@ -10,7 +10,7 @@ module.exports = (req, res, next) => {
 
     async function main() {
         try {
-            console.log(req.query);
+            console.log(req.params);
             res.send(200);
         } catch (e) {
             res.send(SERVER_ERROR);
