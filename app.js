@@ -54,7 +54,10 @@ api.listen(port, function () {
 module.exports.api = api;
 
 //Root route
-api.get('/', function (req, res) { res.send(200, { msg: 'Welcome to Rescue Bot' }) });
+api.get('/', function (req, res) {
+    res.send(200, { msg: 'Welcome to Rescue Bot' })
+});
 
 require('./endpoints/Foundation/routes');
+require('./endpoints/Extensions/routes');
 require('./endpoints/User/routes');

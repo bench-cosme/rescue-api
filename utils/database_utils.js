@@ -7,6 +7,7 @@ const
     //mongoDB connect
     dbconn = (callback) => {
         var URI = process.env.MONGODB_URI;
+        console.log(URI)
         mongoose.connect(URI, { config: { autoIndex: false } }, function (err) {
             if (err) {
                 callback(err);
