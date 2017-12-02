@@ -11,7 +11,7 @@ module.exports = (req, res, next) => {
     const { name } = req.params;
 
     findIncident = () => {
-        return Incident.findById(name)
+        return Incident.findOne(name)
             .then(data => data)
             .catch(err => {
                 throw err;
