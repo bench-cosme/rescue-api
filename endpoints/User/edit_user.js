@@ -14,7 +14,7 @@ module.exports = (req, res, next) => {
 
     const
         finduser = () => {
-            return User.findOne({ fb_id })
+            return User.findOne({fb_id})
                 .then(data => data)
                 .catch(err => {
                     throw err;
