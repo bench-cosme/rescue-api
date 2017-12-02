@@ -11,7 +11,7 @@ module.exports = (req, res, next) => {
     const { fb_id } = req.params;
 
     findUser = () => {
-        return User.findOne({fb_id})
+        return User.findOne({ fb_id })
             .then(data => data)
             .catch(err => {
                 throw err;
@@ -31,8 +31,5 @@ module.exports = (req, res, next) => {
             res.send(SERVER_ERROR);
         }
     }
-
     main();
-
-
 };
