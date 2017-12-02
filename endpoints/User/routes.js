@@ -24,6 +24,6 @@ api.post({ path: 'user' },
     add
 );
 
-api.patch({ path: 'user/:_id' },
+api.patch({ path: 'user/:fb_id' },
     edit
 );
