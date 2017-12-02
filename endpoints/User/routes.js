@@ -3,7 +3,7 @@ const api = module.parent.exports.api;
 const
 
     //user
-    add = require('./add_user'),
+    add = require('./add_user')
     // rm = require('./delete_user'),
     // edit = require('./edit_user'),
     // get_all = require('./get_users'),
