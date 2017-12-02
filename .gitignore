@@ -1,2 +1,5 @@
 /node_modules
 *.env
+
+UB_CLIENT_ID=afb15970-6a95-4ad5-bb7e-f7e6680fc69d
+UB_CLIENT_SECRET=M2eJ6yI0oK6mY1gT7hM4lC4jI8qI4mM7iB5vQ0vT7gH4nV0aT4
