@@ -16,7 +16,7 @@ const
 //     get_all
 // );
 
-api.get({ path: 'user/:_id' },
+api.get({ path: 'user/:fb_id' },
     get_one
 );
 
