@@ -6,8 +6,12 @@ const
 
 const incident = new Schema({
     name: requiredString(),
-    safetytips: requiredString(),
-    hotline: requiredString()
+    image_url: requiredString(),
+    safetytips: [
+        { tips: [] }
+    ],
+    hotline: requiredString(),
+    references: []
 });
 
 module.exports = mongoose.model('Incident', incident);
