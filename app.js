@@ -61,3 +61,4 @@ api.get('/', function (req, res) {
 require('./endpoints/Foundation/routes');
 require('./endpoints/Extensions/routes');
 require('./endpoints/User/routes');
+require('./endpoints/Incident/routes');
