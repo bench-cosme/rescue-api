@@ -8,9 +8,6 @@ const
 
 module.exports = (req, res, next) => {
 
-
-
-
     async function main() {
         try {
             console.log(req.query);
@@ -19,6 +16,7 @@ module.exports = (req, res, next) => {
         }
     }
 
+    console.log("dsads")
     main();
 
 
