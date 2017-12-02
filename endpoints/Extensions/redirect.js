@@ -1,9 +1,9 @@
 const
     Foundation = require('../../models/foundation'),
     {
-    SERVER_ERROR,
+        SERVER_ERROR,
         NOT_FOUND
-} = require('../../utils/errors');
+    } = require('../../utils/errors');
 
 
 module.exports = (req, res, next) => {
