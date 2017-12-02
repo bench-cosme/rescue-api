@@ -11,7 +11,7 @@ module.exports = (req, res, next) => {
     const
         input = Object.assign({}, req.body),
         { fb_id } = input;
-
+        
     const
         createuser = () => {
             const user = new User(input);
