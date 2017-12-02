@@ -7,9 +7,7 @@ const
 const incident = new Schema({
     name: requiredString(),
     image_url: requiredString(),
-    safetytips: [
-        { tips: [] }
-    ],
+    safetytips: [],
     hotline: requiredString(),
     references: []
 });
