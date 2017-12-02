@@ -6,6 +6,7 @@ const
 
 const foundation = new Schema({
     name: requiredString(),
+    email: requiredString(),
     description: requiredString(),
     account_details: [{
         bank: requiredString(),
