@@ -5,4 +5,4 @@ const
 
 api.get({ path: '/extensions/redirect' },
     redirect
-)
+);
