@@ -9,9 +9,7 @@ SERVER_ERROR,
 module.exports = (req, res, next) => {
 
     const { fb_id } = req.params;
-    console.log(req.params);
     findUser = () => {
-        console.log(fb_id);
         return User.findOne({ fb_id })
             .then(data => data)
             .catch(err => {
@@ -28,7 +26,6 @@ module.exports = (req, res, next) => {
                 res.send(NOT_FOUND);
             }
         } catch (e) {
-            console.log(e)
             res.send(SERVER_ERROR);
         }
     }
