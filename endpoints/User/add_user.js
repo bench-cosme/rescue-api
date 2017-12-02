@@ -23,7 +23,7 @@ module.exports = (req, res, next) => {
         },
 
         checkexists = () => {
-            return user.findOne({
+            return User.findOne({
                 fb_id,
             })
                 .then(data => data)
