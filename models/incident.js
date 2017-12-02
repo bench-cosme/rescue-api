@@ -6,7 +6,6 @@ const
 
 const incident = new Schema({
     name: requiredString(),
-    image_url: requiredString(),
     safetytips: [],
     hotline: requiredString(),
     references: []
