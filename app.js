@@ -57,3 +57,4 @@ module.exports.api = api;
 api.get('/', function (req, res) { res.send(200, { msg: 'Welcome to Rescue Bot' }) });
 
 require('./endpoints/Foundation/routes');
+require('./endpoints/User/routes');
