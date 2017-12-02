@@ -1,5 +1,3 @@
-import { strictEqual } from 'assert';
-
 const
     mongoose = require('mongoose'),
     Schema = mongoose.Schema,
