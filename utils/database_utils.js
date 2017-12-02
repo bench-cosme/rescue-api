@@ -6,7 +6,8 @@ const
 const
     //mongoDB connect
     dbconn = (callback) => {
-        var URI ='mongodb://werparanger:w3rp@r@ng3r@ds125556.mlab.com:25556/rescuedb';
+        var URI = process.env.MONGODB_URI;
+        console.log(URI)
         mongoose.connect(URI, { config: { autoIndex: false } }, function (err) {
             if (err) {
                 callback(err);
