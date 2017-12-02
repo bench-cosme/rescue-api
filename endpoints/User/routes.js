@@ -5,9 +5,9 @@ const
     //user
     add = require('./add_user')
     // rm = require('./delete_user'),
-    // edit = require('./edit_user'),
+     edit = require('./edit_user'),
     // get_all = require('./get_users'),
-    // get_one = require('./get_user');
+     get_one = require('./get_user');
 
 //bank
 
@@ -16,14 +16,14 @@ const
 //     get_all
 // );
 
-// api.get({ path: 'user/:_id' },
-//     get_one
-// );
+api.get({ path: 'user/:_id' },
+    get_one
+);
 
 api.post({ path: 'user' },
     add
 );
 
-// api.patch({ path: 'user/:_id' },
-//     edit
-// );
+api.patch({ path: 'user/:_id' },
+    edit
+);
