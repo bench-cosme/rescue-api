@@ -10,6 +10,7 @@ module.exports = (req, res, next) => {
 
     const { fb_id } = req.params;
     findUser = () => {
+        console.log(fb_id);
         return User.findOne({ fb_id })
             .then(data => data)
             .catch(err => {
