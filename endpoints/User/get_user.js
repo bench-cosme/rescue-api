@@ -27,6 +27,7 @@ module.exports = (req, res, next) => {
                 res.send(NOT_FOUND);
             }
         } catch (e) {
+            console.log(e)
             res.send(SERVER_ERROR);
         }
     }
