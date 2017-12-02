@@ -41,6 +41,7 @@ module.exports = (req, res, next) => {
                 res.send(200, { data: f });
             }
         } catch (e) {
+            console.log(e);
             res.send(SERVER_ERROR);
         }
     }
