@@ -10,9 +10,9 @@ const user = new Schema({
         lastname: String
     },
     fb_id: requiredString(),
-    subscriptions: [{type: Array}],
+    subscriptions: [{ type: Array }],
     receive_time: String,
-    emergency_contact: ({type: Array})
+    emergency_contact: []
 });
 
 module.exports = mongoose.model('User', user);
