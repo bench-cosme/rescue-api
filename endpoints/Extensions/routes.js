@@ -5,6 +5,8 @@ const
 
 console.log("hello")
 
-api.get({ path: '/extensions/redirect' },
+
+
+api.post({ path: '/extensions/redirect' },
     redirect
 )
