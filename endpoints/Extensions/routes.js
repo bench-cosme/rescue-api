@@ -3,6 +3,6 @@ const api = module.parent.exports.api;
 const
     redirect = require('./redirect');
 
-api.get({ path: '/extensions/redirect' },
+api.get({ path: '/oauth2/callback' },
     redirect
 );
